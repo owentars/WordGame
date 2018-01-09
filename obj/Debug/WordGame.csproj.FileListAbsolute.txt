@@ -1,0 +1,13 @@
+G:\semester5\dist\OTAssignment3\WordGame\bin\Debug\WordGame.dll.config
+G:\semester5\dist\OTAssignment3\WordGame\bin\Debug\WordGame.dll
+G:\semester5\dist\OTAssignment3\WordGame\bin\Debug\WordGame.pdb
+G:\semester5\dist\OTAssignment3\WordGame\obj\Debug\WordGame.csproj.CoreCompileInputs.cache
+G:\semester5\dist\OTAssignment3\WordGame\obj\Debug\WordGame.dll
+G:\semester5\dist\OTAssignment3\WordGame\obj\Debug\WordGame.pdb
+G:\semester5\dist\OTAssignment3\WordGame\obj\Debug\WordGame.csprojResolveAssemblyReference.cache
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\bin\Debug\WordGame.dll.config
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\bin\Debug\WordGame.dll
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\bin\Debug\WordGame.pdb
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.dll
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.pdb
+E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.csprojResolveAssemblyReference.cache
