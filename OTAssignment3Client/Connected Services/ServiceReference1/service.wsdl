@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WordGame" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WordGame" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWordGame_isGameBeingHosted_InputMessage">
+    <wsdl:part name="parameters" element="tns:isGameBeingHosted" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_isGameBeingHosted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isGameBeingHostedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_hostGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:hostGame" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_hostGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:hostGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_hostGame_GameBeingHostedExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WordGame" name="detail" element="q1:GameBeingHostedException" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_join_InputMessage">
+    <wsdl:part name="parameters" element="tns:join" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_join_OutputMessage">
+    <wsdl:part name="parameters" element="tns:joinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_join_MaximunNumberOfPlayersReachedExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WordGame" name="detail" element="q2:MaximunNumberOfPlayersReachedException" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_join_HostCannotJoinTheGameExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WordGame" name="detail" element="q3:HostCannotJoinTheGameException" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_join_GameIsNotBeingHostedExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WordGame" name="detail" element="q4:GameIsNotBeingHostedException" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_guessWord_InputMessage">
+    <wsdl:part name="parameters" element="tns:guessWord" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_guessWord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:guessWordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWordGame_guessWord_PlayerNotPlayingTheGameExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WordGame" name="detail" element="q5:PlayerNotPlayingTheGameException" />
+  </wsdl:message>
+  <wsdl:portType name="IWordGame">
+    <wsdl:operation name="isGameBeingHosted">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWordGame/isGameBeingHosted" message="tns:IWordGame_isGameBeingHosted_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWordGame/isGameBeingHostedResponse" message="tns:IWordGame_isGameBeingHosted_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="hostGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWordGame/hostGame" message="tns:IWordGame_hostGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWordGame/hostGameResponse" message="tns:IWordGame_hostGame_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordGame/hostGameGameBeingHostedExceptionFault" name="GameBeingHostedExceptionFault" message="tns:IWordGame_hostGame_GameBeingHostedExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="join">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWordGame/join" message="tns:IWordGame_join_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWordGame/joinResponse" message="tns:IWordGame_join_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordGame/joinMaximunNumberOfPlayersReachedExceptionFault" name="MaximunNumberOfPlayersReachedExceptionFault" message="tns:IWordGame_join_MaximunNumberOfPlayersReachedExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordGame/joinHostCannotJoinTheGameExceptionFault" name="HostCannotJoinTheGameExceptionFault" message="tns:IWordGame_join_HostCannotJoinTheGameExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordGame/joinGameIsNotBeingHostedExceptionFault" name="GameIsNotBeingHostedExceptionFault" message="tns:IWordGame_join_GameIsNotBeingHostedExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="guessWord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWordGame/guessWord" message="tns:IWordGame_guessWord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWordGame/guessWordResponse" message="tns:IWordGame_guessWord_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IWordGame/guessWordPlayerNotPlayingTheGameExceptionFault" name="PlayerNotPlayingTheGameExceptionFault" message="tns:IWordGame_guessWord_PlayerNotPlayingTheGameExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWordGame" type="tns:IWordGame">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="isGameBeingHosted">
+      <soap:operation soapAction="http://tempuri.org/IWordGame/isGameBeingHosted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hostGame">
+      <soap:operation soapAction="http://tempuri.org/IWordGame/hostGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="GameBeingHostedExceptionFault">
+        <soap:fault use="literal" name="GameBeingHostedExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="join">
+      <soap:operation soapAction="http://tempuri.org/IWordGame/join" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="MaximunNumberOfPlayersReachedExceptionFault">
+        <soap:fault use="literal" name="MaximunNumberOfPlayersReachedExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="HostCannotJoinTheGameExceptionFault">
+        <soap:fault use="literal" name="HostCannotJoinTheGameExceptionFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="GameIsNotBeingHostedExceptionFault">
+        <soap:fault use="literal" name="GameIsNotBeingHostedExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guessWord">
+      <soap:operation soapAction="http://tempuri.org/IWordGame/guessWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="PlayerNotPlayingTheGameExceptionFault">
+        <soap:fault use="literal" name="PlayerNotPlayingTheGameExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WordGame">
+    <wsdl:port name="BasicHttpBinding_IWordGame" binding="tns:BasicHttpBinding_IWordGame">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WordGame/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
