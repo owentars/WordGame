@@ -1,0 +1,15 @@
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe.config
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.pdb
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.csprojResolveAssemblyReference.cache
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.csproj.CoreCompileInputs.cache
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.exe
+G:\semester5\dist\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.pdb
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe.config
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.pdb
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.csprojResolveAssemblyReference.cache
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.exe
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.pdb
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\WordGame.dll
+E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\WordGame.pdb
