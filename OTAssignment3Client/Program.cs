@@ -4,28 +4,31 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using OTAssignment3Client.ServiceReference1;
+using System.Windows.Forms;
 using WordGame;
-using Word = OTAssignment3Client.ServiceReference1;
-using System.ServiceModel;
+using Microsoft.VisualBasic;
 
-namespace OTAssignment3Client
+namespace WordGameClient
 {
     class Program
     {
         static void Main(string[] args)
         {
-            WordGameClient proxy = new WordGameClient();
+            ServiceReference1.WordGameClient proxy = new ServiceReference1.WordGameClient();
+
 
             bool canPlayGame = true;
 
             Console.WriteLine("Player's name?");
-            String playerName = Console.ReadLine();
+            string playerName = Console.ReadLine();
 
+
+
+            //Checks if game is being hosted yet
             if (!proxy.isGameBeingHosted())
             {
                 Console.WriteLine("Welcome " + playerName + "! Do you want to host the game?");
-                if (Console.ReadLine().CompareTo("yes") == 0)
+                if (Console.ReadLine().ToUpper().CompareTo("YES") == 0)
                 {
                     Console.WriteLine("Type the word to scramble.");
                     string inputWord = Console.ReadLine();
@@ -43,17 +46,20 @@ namespace OTAssignment3Client
 
                 }
             }
+
+            //Checks if user is able to play game, if hosting they can't
             if (canPlayGame)
             {
                 Console.WriteLine("Do you want to play the game?");
-                if (Console.ReadLine().CompareTo("yes") == 0)
+                if (Console.ReadLine().ToUpper().CompareTo("YES") == 0)
                 {
-                    WordGame.Word gameWords;
+                    Word gameWords;
                     try
                     {
+                        //Attempts to join player to game, if more than MAX_PLAYERS then unable to
                         gameWords = proxy.join(playerName);
                         Console.WriteLine("Can you unscramble this word? => " + gameWords.scrambledWord);
-                        String guessedWord;
+                        string guessedWord;
                         bool gameOver = false;
                         while (!gameOver)
                         {
@@ -65,6 +71,7 @@ namespace OTAssignment3Client
                             }
                         }
                         Console.WriteLine("YOU WON!!!");
+                        Console.ReadLine();
                         proxy.Close();
                     }
                     catch (FaultException<MaximunNumberOfPlayersReachedException> e)

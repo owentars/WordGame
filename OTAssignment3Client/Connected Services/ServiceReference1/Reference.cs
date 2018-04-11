@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OTAssignment3Client.ServiceReference1 {
+namespace WordGameClient.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -46,12 +46,12 @@ namespace OTAssignment3Client.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IWordGameChannel : OTAssignment3Client.ServiceReference1.IWordGame, System.ServiceModel.IClientChannel {
+    public interface IWordGameChannel : IWordGame, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WordGameClient : System.ServiceModel.ClientBase<OTAssignment3Client.ServiceReference1.IWordGame>, OTAssignment3Client.ServiceReference1.IWordGame {
+    public partial class WordGameClient : System.ServiceModel.ClientBase<IWordGame>, IWordGame {
         
         public WordGameClient() {
         }

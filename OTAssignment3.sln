@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGame", "WordGame\WordGame.csproj", "{E4293236-9131-4469-8A45-F70B26044DBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTAssignment3Client", "OTAssignment3Client\OTAssignment3Client.csproj", "{744C1309-9E7A-4A5F-B8F8-655FCF94A909}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordGameClient", "OTAssignment3Client\WordGameClient.csproj", "{744C1309-9E7A-4A5F-B8F8-655FCF94A909}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E4293236-9131-4469-8A45-F70B26044DBF} = {E4293236-9131-4469-8A45-F70B26044DBF}
 	EndProjectSection
