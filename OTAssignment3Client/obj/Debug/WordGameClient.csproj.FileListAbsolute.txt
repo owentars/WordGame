@@ -1,8 +1,0 @@
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe.config
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.exe
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\OTAssignment3Client.pdb
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\WordGame.dll
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\bin\Debug\WordGame.pdb
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\WordGameClient.csprojResolveAssemblyReference.cache
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.exe
-E:\Semester5\Distributed\download (5)\OTAssignment3\OTAssignment3Client\obj\Debug\OTAssignment3Client.pdb
