@@ -11,3 +11,8 @@ E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\bin\Debug\WordGame.
 E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.dll
 E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.pdb
 E:\Semester5\Distributed\download (5)\OTAssignment3\WordGame\obj\Debug\WordGame.csprojResolveAssemblyReference.cache
+E:\Semester5\Distributed\WordScramble\WordScramble\WordGame\bin\Debug\WordGame.dll.config
+E:\Semester5\Distributed\WordScramble\WordScramble\WordGame\bin\Debug\WordGame.dll
+E:\Semester5\Distributed\WordScramble\WordScramble\WordGame\bin\Debug\WordGame.pdb
+E:\Semester5\Distributed\WordScramble\WordScramble\WordGame\obj\Debug\WordGame.dll
+E:\Semester5\Distributed\WordScramble\WordScramble\WordGame\obj\Debug\WordGame.pdb

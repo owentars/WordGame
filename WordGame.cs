@@ -20,6 +20,7 @@ namespace WordGame
         // the list of players playing the game
         private static List<string> activePlayers = new List<string>();
 
+        //Checks if game has host
         [OperationBehavior]
         public bool isGameBeingHosted()
         {
